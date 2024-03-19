@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poster</title>
+    <script src="https://kit.fontawesome.com/5ad5993c43.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(172, 38, 20);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            background-size: contain;
+            color: white;
+            font-family: 'roboto';
+            
+        }
+       .container h1{
+            color: rgb(238, 76, 76);
+            font-weight: 700;
+            
+        }
+        .container img{
+            width: 180px;
+            border-radius: 50%;
+            border: 2px solid white;
+            border-style: dotted;
+            align-self: center;
+        }
+        .container h5{
+            font-size: 20px;
+        }
+        .container .fa-play{
+    width: 25px;
+    color:brown;
+    border-radius: 50%;
+            border: 2px solid white;
+            align-self: center;
+            padding: 5px;
+            margin: 5px;
+            background-color: white;
+}
+@media(max-width:723px){
+    .container h5{
+        font-size: 15px;
+    }
+    .container{
+        padding: 5px;
+    }
+    .container h1{
+        font-size: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Principal's Message</h1>
+        <img src="data:image/jpeg;base64,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" alt="">
+    <h5>It gives me a pleasure <br>to introduce...</h5>
+    <a href="Principal_message.html"target="blank"><i class="fa-solid fa-play"></i></a>
+    </div>
+</body>
+</html>
